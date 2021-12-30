@@ -31,14 +31,14 @@ Plotting maternal age and birthweight, the scatterplot does not have evidence fo
 ## Results
 
 Using simple linear regression, we assume approximate linearity, normality, constant variance and independence. From the analysis, we have evidence to believe that older mothers tend to have babies with higher birth weight (p=.001). We estimate that the mean difference in birthweight between two mothers differing by one year in age is 11.43 gms, with older mothers being associated with higher birthweight. This estimated difference would not be surprising if the true difference was between 4.66 gms and 18.20 gms. 
-```
+
 |               | Estimate      | 95% CI       | P-value |
 | ------------- |---------------| -------------|---------|
 | Intercept     | 2823          | [2650, 2996] |         |
 | Age           | 11.43         | [4.66, 18.20]| .001    |
-```
+
 For the multiple linear regression analysis, we still assume linearity, normality, constant variance and independence in the observations. The estimate for the mean difference in birthweight between older mothers and younger mothers changed after adjusting for age, sex, smoker and parity. This is due to the presence of a confounding variable, which is parity. However, the multiple linear regression does not provide sufficient evidence to suggest that maternal age is associated with birth weight. We estimate that the difference in mean birthweight between two mothers differing by one year in age with same smoking status, sex of baby and parity is 6.96 gms, with older mothers having higher birthweight when adjusted for age, sex, smoker and parity. The estimated difference would not be judged unusual if the true difference was between 4.66 gms and 18.20 gms. This association was not found to be statistically significant (p=0.18). 
-```
+
 |               | Estimate      | 95% CI           | P-value |
 | ------------- |---------------| -----------------|---------|
 | Intercept     | 2823          | [2650, 2996]     |         |
@@ -46,7 +46,7 @@ For the multiple linear regression analysis, we still assume linearity, normalit
 | Sex           | -99.81        | [-174.90, -24.72]|         |
 | Smoker        | 196.90        | [117.30, 276.50] |         |
 | Parity        | 33.77         | [-11.35, 78.89]| |         |
-```
+
 One limitation to linear regression analysis is that it is sensitive to outliers, which can have huge effects on determining the association. To avoid this, I could have fit log-transformed outcome which is less sensitive to outliers. 
 
 ## Conclusion
